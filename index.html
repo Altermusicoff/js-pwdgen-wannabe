@@ -10,6 +10,7 @@ prendendo i dati da quelli forniti dall'utente -->
     <title></title>
   </head>
   <body>
+    <h1 id="title"></h1>
 
   </body>
   <script>
@@ -18,7 +19,6 @@ prendendo i dati da quelli forniti dall'utente -->
     var age = prompt('Età:');
     var color = prompt('Colore preferito:');
     console.log('Nome:',name,'Cognome:', surname,'Età:', age,'Colore preferito:', color);
-    document.write(name, surname, age, color);
-    // document.getElementById('title').innerHTML = name + surname + age + color;
+    document.getElementById('title').innerHTML = name + surname + age + color;
   </script>
 </html>
