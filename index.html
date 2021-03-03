@@ -7,18 +7,34 @@ prendendo i dati da quelli forniti dall'utente -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS ex2</title>
   </head>
   <body>
-    <h1 id="title"></h1>
-
+    <div class="container">
+      <h1 class="">NAME:</h1>
+      <h1 id="userName"></h1>
+      <h1>SURNAME:</h1>
+      <h1 id="userSurname"></h1>
+      <h1>AGE:</h1>
+      <h1 id="userAge"></h1>
+      <h1>COLOR:</h1>
+      <h1 id="userColor"></h1>
+    </div>
+    <script>
+      var name = prompt('Nome:');
+      var surname = prompt('Cognome:');
+      var age = prompt('Età:');
+      var color = prompt('Colore preferito:');
+      console.log('Nome:', name, 'Cognome:', surname, 'Età:', age, 'Colore preferito:', color);
+      document.getElementById('userName').innerHTML = name;
+      document.getElementById('userSurname').innerHTML = surname;
+      document.getElementById('userAge').innerHTML = age;
+      document.getElementById('userColor').innerHTML = color;
+      if (color === "yellow") {
+        document.writeln('')
+      }
+    </script>
   </body>
-  <script>
-    var name = prompt('Nome:');
-    var surname = prompt('Cognome:');
-    var age = prompt('Età:');
-    var color = prompt('Colore preferito:');
-    console.log('Nome:',name,'Cognome:', surname,'Età:', age,'Colore preferito:', color);
-    document.getElementById('title').innerHTML = name + surname + age + color;
-  </script>
+
 </html>
